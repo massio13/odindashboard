@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "aside header"
+    "aside section";
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+}
+aside{
+    grid-area: aside;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu{
+    height: 500px;
+    
+}
+.menu ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo{
+    height: 100px;
+}
+.setting{
+    height: 250px;
+}
+section{
+    grid-area: section;
+}
