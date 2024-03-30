@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "aside header"
+    "aside section";
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.searchbar{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.inpsearch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.inpsearch span{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.inpsearch input{
+    width: 800px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.notif{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+}
+.profile{
+    background-color: bisque;
+}
+
+.logo{
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+aside{
+    grid-area: aside;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu{
+    height: 350px;
+    
+}
+.menu ul{
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu ul li{
+    height: 100%;
+}
+
+.setting{
+    height: 250px;
+}
+
+/*menu setting*/
+.setting ul{
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.setting ul li{
+    height: 100%;
+}
+
+.setting{
+    height: 200px;
+}
+section{
+    grid-area: section;
+}
+
+.imgprofil{
+    height: 80px;
+}
